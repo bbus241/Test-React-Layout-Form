@@ -2,7 +2,6 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Link
 } from "react-router-dom";
 import IndexPage from "./indexpage";
 import Layoutpage from "./component/layout/layoutpage";
@@ -15,6 +14,10 @@ function App() {
         <Route path="/" element={<IndexPage />}>
         </Route>
         <Route path="/:lang" element={<IndexPage />}>
+        </Route>
+        <Route path="layout/:lang" element={<Layoutpage/>}>
+        </Route>
+        <Route path="formandtable/:lang" element={<AllPageinForm />}>
         </Route>
         <Route path="/:lang/layout/:lang" element={<Layoutpage/>}>
         </Route>
